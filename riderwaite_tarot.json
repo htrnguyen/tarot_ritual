@@ -1,0 +1,782 @@
+{
+  "The Fool": {
+    "id": 0,
+    "name_vi": "Kẻ Khờ",
+    "name_en": "The Fool",
+    "image_url": "images/the_fool.webp",
+    "core_message": "Một khởi đầu mới đang mở ra, hãy bước đi với sự cởi mở.",
+    "keywords": ["Khởi đầu", "Tự do", "Tin tưởng"],
+    "daily_guidance": "Đừng sợ thử điều mới hôm nay. Bạn không cần biết hết mọi thứ để bắt đầu.",
+    "reflection_question": "Nếu không sợ sai, hôm nay bạn sẽ dám làm điều gì?"
+  },
+  "The Magician": {
+    "id": 1,
+    "name_vi": "Nhà Ảo Thuật",
+    "name_en": "The Magician",
+    "image_url": "images/the_magician.webp",
+    "core_message": "Bạn có đủ khả năng để tạo ra điều mình muốn.",
+    "keywords": ["Chủ động", "Sáng tạo", "Năng lực"],
+    "daily_guidance": "Hãy tận dụng những gì bạn đang có thay vì chờ điều kiện hoàn hảo.",
+    "reflection_question": "Nguồn lực nào bạn đang chưa sử dụng?"
+  },
+  "The High Priestess": {
+    "id": 2,
+    "name_vi": "Nữ Tư Tế",
+    "name_en": "The High Priestess",
+    "image_url": "images/the_high_priestess.webp",
+    "core_message": "Trực giác của bạn đang nói điều quan trọng.",
+    "keywords": ["Trực giác", "Im lặng", "Nội tâm"],
+    "daily_guidance": "Hôm nay hãy quan sát nhiều hơn nói. Câu trả lời nằm bên trong bạn.",
+    "reflection_question": "Bạn đang bỏ qua tín hiệu tinh tế nào?"
+  },
+  "The Empress": {
+    "id": 3,
+    "name_vi": "Hoàng Hậu",
+    "name_en": "The Empress",
+    "image_url": "images/the_empress.webp",
+    "core_message": "Hãy nuôi dưỡng điều đang lớn lên trong bạn.",
+    "keywords": ["Nuôi dưỡng", "Yêu thương", "Phong phú"],
+    "daily_guidance": "Dành sự quan tâm cho bản thân hoặc người khác bằng sự dịu dàng.",
+    "reflection_question": "Điều gì trong cuộc sống bạn cần chăm sóc nhiều hơn?"
+  },
+  "The Emperor": {
+    "id": 4,
+    "name_vi": "Hoàng Đế",
+    "name_en": "The Emperor",
+    "image_url": "images/the_emperor.webp",
+    "core_message": "Sự ổn định đến từ việc bạn đứng vững vai trò của mình.",
+    "keywords": ["Kỷ luật", "Trách nhiệm", "Cấu trúc"],
+    "daily_guidance": "Hôm nay cần rõ ràng ranh giới và quyết định.",
+    "reflection_question": "Bạn cần kiểm soát điều gì tốt hơn?"
+  },
+  "The Hierophant": {
+    "id": 5,
+    "name_vi": "Giáo Hoàng",
+    "name_en": "The Hierophant",
+    "image_url": "images/the_hierophant.webp",
+    "core_message": "Giá trị truyền thống có thể mang lại sự định hướng.",
+    "keywords": ["Niềm tin", "Học hỏi", "Hệ thống"],
+    "daily_guidance": "Hãy học từ người đi trước hoặc từ kinh nghiệm đã có.",
+    "reflection_question": "Niềm tin nào đang dẫn dắt bạn hôm nay?"
+  },
+  "The Lovers": {
+    "id": 6,
+    "name_vi": "Người Yêu",
+    "name_en": "The Lovers",
+    "image_url": "images/the_lovers.webp",
+    "core_message": "Một lựa chọn cần sự chân thành.",
+    "keywords": ["Kết nối", "Lựa chọn", "Giá trị"],
+    "daily_guidance": "Hãy chọn điều phù hợp với giá trị thật của bạn.",
+    "reflection_question": "Bạn đang chọn vì tình cảm hay vì sợ hãi?"
+  },
+  "The Chariot": {
+    "id": 7,
+    "name_vi": "Cỗ Xe",
+    "name_en": "The Chariot",
+    "image_url": "images/the_chariot.webp",
+    "core_message": "Ý chí giúp bạn tiến về phía trước.",
+    "keywords": ["Quyết tâm", "Tiến lên", "Kiểm soát"],
+    "daily_guidance": "Tập trung mục tiêu và đừng để nhiễu loạn làm bạn chùn bước.",
+    "reflection_question": "Bạn đang hướng năng lượng của mình về đâu?"
+  },
+  "Strength": {
+    "id": 8,
+    "name_vi": "Sức Mạnh",
+    "name_en": "Strength",
+    "image_url": "images/strength.webp",
+    "core_message": "Sự dịu dàng cũng là một dạng sức mạnh.",
+    "keywords": ["Kiên nhẫn", "Can đảm", "Tự chủ"],
+    "daily_guidance": "Hãy đối diện thay vì ép buộc.",
+    "reflection_question": "Bạn có thể mềm mỏng hơn ở điểm nào?"
+  },
+  "The Hermit": {
+    "id": 9,
+    "name_vi": "Ẩn Sĩ",
+    "name_en": "The Hermit",
+    "image_url": "images/the_hermit.webp",
+    "core_message": "Câu trả lời đến khi bạn chịu lắng nghe.",
+    "keywords": ["Nội tâm", "Tĩnh lặng", "Tự soi chiếu"],
+    "daily_guidance": "Giảm nhịp độ để hiểu rõ bản thân.",
+    "reflection_question": "Bạn đang tìm điều gì bên trong?"
+  },
+  "Wheel of Fortune": {
+    "id": 10,
+    "name_vi": "Bánh Xe Số Phận",
+    "name_en": "Wheel of Fortune",
+    "image_url": "images/wheel_of_fortune.webp",
+    "core_message": "Sự thay đổi là điều không tránh khỏi.",
+    "keywords": ["Chu kỳ", "Thay đổi", "Cơ hội"],
+    "daily_guidance": "Hãy linh hoạt với hoàn cảnh mới.",
+    "reflection_question": "Bạn đang chống lại hay đón nhận sự thay đổi?"
+  },
+  "Justice": {
+    "id": 11,
+    "name_vi": "Công Lý",
+    "name_en": "Justice",
+    "image_url": "images/justice.webp",
+    "core_message": "Mọi việc cần được nhìn nhận công bằng.",
+    "keywords": ["Trung thực", "Cân bằng", "Trách nhiệm"],
+    "daily_guidance": "Hãy thành thật với chính mình.",
+    "reflection_question": "Điều gì cần được nhìn nhận rõ ràng hơn?"
+  },
+  "The Hanged Man": {
+    "id": 12,
+    "name_vi": "Người Treo Ngược",
+    "name_en": "The Hanged Man",
+    "image_url": "images/the_hanged_man.webp",
+    "core_message": "Đôi khi cần dừng lại để thấy khác đi.",
+    "keywords": ["Buông bỏ", "Góc nhìn mới", "Tạm dừng"],
+    "daily_guidance": "Đừng vội hành động hôm nay.",
+    "reflection_question": "Bạn cần thay đổi góc nhìn ở đâu?"
+  },
+  "Death": {
+    "id": 13,
+    "name_vi": "Cái Chết",
+    "name_en": "Death",
+    "image_url": "images/death.webp",
+    "core_message": "Một chu kỳ cũ đang khép lại.",
+    "keywords": ["Kết thúc", "Chuyển hóa", "Tái sinh"],
+    "daily_guidance": "Hãy cho phép điều không còn phù hợp rời đi.",
+    "reflection_question": "Điều gì bạn cần buông bỏ?"
+  },
+  "Temperance": {
+    "id": 14,
+    "name_vi": "Tiết Độ",
+    "name_en": "Temperance",
+    "image_url": "images/temperance.webp",
+    "core_message": "Sự cân bằng mang lại hài hòa.",
+    "keywords": ["Điều độ", "Hài hòa", "Kiên nhẫn"],
+    "daily_guidance": "Tránh cực đoan trong suy nghĩ hay hành động.",
+    "reflection_question": "Bạn cần điều chỉnh điều gì?"
+  },
+  "The Devil": {
+    "id": 15,
+    "name_vi": "Ác Quỷ",
+    "name_en": "The Devil",
+    "image_url": "images/the_devil.webp",
+    "core_message": "Bạn đang bị ràng buộc bởi điều gì đó.",
+    "keywords": ["Ràng buộc", "Cám dỗ", "Nhận thức"],
+    "daily_guidance": "Nhận ra điều đang kiểm soát bạn.",
+    "reflection_question": "Bạn đang trao quyền lực cho điều gì?"
+  },
+  "The Tower": {
+    "id": 16,
+    "name_vi": "Tòa Tháp",
+    "name_en": "The Tower",
+    "image_url": "images/the_tower.webp",
+    "core_message": "Sự thật có thể đến bất ngờ.",
+    "keywords": ["Đột phá", "Thức tỉnh", "Sụp đổ"],
+    "daily_guidance": "Đừng bám víu điều đã không còn vững.",
+    "reflection_question": "Điều gì cần được xây lại từ đầu?"
+  },
+  "The Star": {
+    "id": 17,
+    "name_vi": "Ngôi Sao",
+    "name_en": "The Star",
+    "image_url": "images/the_star.webp",
+    "core_message": "Hy vọng đang được thắp sáng.",
+    "keywords": ["Chữa lành", "Hy vọng", "Niềm tin"],
+    "daily_guidance": "Tin rằng mọi thứ đang dần tốt hơn.",
+    "reflection_question": "Điều gì mang lại hy vọng cho bạn?"
+  },
+  "The Moon": {
+    "id": 18,
+    "name_vi": "Mặt Trăng",
+    "name_en": "The Moon",
+    "image_url": "images/the_moon.webp",
+    "core_message": "Không phải mọi thứ đều rõ ràng.",
+    "keywords": ["Mơ hồ", "Tiềm thức", "Cảm xúc"],
+    "daily_guidance": "Cẩn trọng với nỗi sợ và suy diễn.",
+    "reflection_question": "Bạn đang sợ điều gì?"
+  },
+  "The Sun": {
+    "id": 19,
+    "name_vi": "Mặt Trời",
+    "name_en": "The Sun",
+    "image_url": "images/the_sun.webp",
+    "core_message": "Năng lượng tích cực đang lan tỏa.",
+    "keywords": ["Niềm vui", "Rõ ràng", "Tích cực"],
+    "daily_guidance": "Hãy cho phép bản thân tận hưởng.",
+    "reflection_question": "Điều gì khiến bạn cảm thấy sống động?"
+  },
+  "Judgement": {
+    "id": 20,
+    "name_vi": "Phán Xét",
+    "name_en": "Judgement",
+    "image_url": "images/judgement.webp",
+    "core_message": "Đã đến lúc nhìn lại và thức tỉnh.",
+    "keywords": ["Thức tỉnh", "Nhận thức", "Tái sinh"],
+    "daily_guidance": "Hãy học từ quá khứ để bước tiếp.",
+    "reflection_question": "Bài học lớn nhất bạn đang nhận ra là gì?"
+  },
+  "The World": {
+    "id": 21,
+    "name_vi": "Thế Giới",
+    "name_en": "The World",
+    "image_url": "images/the_world.webp",
+    "core_message": "Một chặng đường đã hoàn tất.",
+    "keywords": ["Hoàn thành", "Trọn vẹn", "Thành tựu"],
+    "daily_guidance": "Ghi nhận những gì bạn đã đạt được.",
+    "reflection_question": "Bạn đã trưởng thành hơn như thế nào?"
+  },
+  "Ace of Wands": {
+    "id": 22,
+    "name_vi": "Át Gậy",
+    "name_en": "Ace of Wands",
+    "image_url": "images/ace_of_wands.webp",
+    "core_message": "Một nguồn cảm hứng mới đang xuất hiện.",
+    "keywords": ["Khởi đầu", "Động lực", "Sáng tạo"],
+    "daily_guidance": "Hãy hành động theo điều khiến bạn hứng khởi.",
+    "reflection_question": "Điều gì đang thôi thúc bạn bắt đầu?"
+  },
+  "Two of Wands": {
+    "id": 23,
+    "name_vi": "Hai Gậy",
+    "name_en": "Two of Wands",
+    "image_url": "images/two_of_wands.webp",
+    "core_message": "Đã đến lúc nhìn xa hơn.",
+    "keywords": ["Kế hoạch", "Tầm nhìn", "Lựa chọn"],
+    "daily_guidance": "Hãy cân nhắc bước tiếp theo một cách chủ động.",
+    "reflection_question": "Bạn đang hướng tới điều gì?"
+  },
+  "Three of Wands": {
+    "id": 24,
+    "name_vi": "Ba Gậy",
+    "name_en": "Three of Wands",
+    "image_url": "images/three_of_wands.webp",
+    "core_message": "Kết quả đang dần hình thành.",
+    "keywords": ["Mở rộng", "Chờ đợi", "Tiến triển"],
+    "daily_guidance": "Tin tưởng vào những gì bạn đã gieo.",
+    "reflection_question": "Bạn đang chờ đợi điều gì đến?"
+  },
+  "Four of Wands": {
+    "id": 25,
+    "name_vi": "Bốn Gậy",
+    "name_en": "Four of Wands",
+    "image_url": "images/four_of_wands.webp",
+    "core_message": "Một cảm giác ổn định và an vui.",
+    "keywords": ["Ổn định", "Niềm vui", "Gắn kết"],
+    "daily_guidance": "Hãy tận hưởng khoảnh khắc hiện tại.",
+    "reflection_question": "Điều gì khiến bạn cảm thấy an toàn?"
+  },
+  "Five of Wands": {
+    "id": 26,
+    "name_vi": "Năm Gậy",
+    "name_en": "Five of Wands",
+    "image_url": "images/five_of_wands.webp",
+    "core_message": "Xung đột nhỏ có thể xảy ra.",
+    "keywords": ["Cạnh tranh", "Khác biệt", "Căng thẳng"],
+    "daily_guidance": "Đừng để cái tôi lấn át mục tiêu chung.",
+    "reflection_question": "Bạn đang bảo vệ điều gì?"
+  },
+  "Six of Wands": {
+    "id": 27,
+    "name_vi": "Sáu Gậy",
+    "name_en": "Six of Wands",
+    "image_url": "images/six_of_wands.webp",
+    "core_message": "Nỗ lực của bạn được ghi nhận.",
+    "keywords": ["Thành công", "Công nhận", "Tự tin"],
+    "daily_guidance": "Hãy tự hào nhưng vẫn khiêm tốn.",
+    "reflection_question": "Bạn đã đạt được điều gì gần đây?"
+  },
+  "Seven of Wands": {
+    "id": 28,
+    "name_vi": "Bảy Gậy",
+    "name_en": "Seven of Wands",
+    "image_url": "images/seven_of_wands.webp",
+    "core_message": "Bạn cần bảo vệ quan điểm của mình.",
+    "keywords": ["Bảo vệ", "Kiên định", "Thách thức"],
+    "daily_guidance": "Đứng vững trước áp lực.",
+    "reflection_question": "Điều gì xứng đáng để bạn bảo vệ?"
+  },
+  "Eight of Wands": {
+    "id": 29,
+    "name_vi": "Tám Gậy",
+    "name_en": "Eight of Wands",
+    "image_url": "images/eight_of_wands.webp",
+    "core_message": "Mọi việc đang diễn ra rất nhanh.",
+    "keywords": ["Tốc độ", "Tiến triển", "Tin tức"],
+    "daily_guidance": "Hãy sẵn sàng đón nhận thay đổi.",
+    "reflection_question": "Bạn có đang theo kịp nhịp độ?"
+  },
+  "Nine of Wands": {
+    "id": 30,
+    "name_vi": "Chín Gậy",
+    "name_en": "Nine of Wands",
+    "image_url": "images/nine_of_wands.webp",
+    "core_message": "Bạn đã đi gần đến cuối chặng.",
+    "keywords": ["Kiên trì", "Mệt mỏi", "Bền bỉ"],
+    "daily_guidance": "Đừng bỏ cuộc vào phút cuối.",
+    "reflection_question": "Điều gì giúp bạn tiếp tục?"
+  },
+  "Ten of Wands": {
+    "id": 31,
+    "name_vi": "Mười Gậy",
+    "name_en": "Ten of Wands",
+    "image_url": "images/ten_of_wands.webp",
+    "core_message": "Bạn đang gánh quá nhiều.",
+    "keywords": ["Gánh nặng", "Áp lực", "Quá tải"],
+    "daily_guidance": "Hãy xem điều gì có thể buông bớt.",
+    "reflection_question": "Bạn đang ôm đồm điều gì?"
+  },
+  "Page of Wands": {
+    "id": 32,
+    "name_vi": "Tiểu Đồng Gậy",
+    "name_en": "Page of Wands",
+    "image_url": "images/page_of_wands.webp",
+    "core_message": "Tinh thần khám phá được đánh thức.",
+    "keywords": ["Nhiệt huyết", "Khám phá", "Học hỏi"],
+    "daily_guidance": "Hãy tò mò và thử nghiệm.",
+    "reflection_question": "Bạn muốn khám phá điều gì?"
+  },
+  "Knight of Wands": {
+    "id": 33,
+    "name_vi": "Hiệp Sĩ Gậy",
+    "name_en": "Knight of Wands",
+    "image_url": "images/knight_of_wands.webp",
+    "core_message": "Hành động mạnh mẽ nhưng bốc đồng.",
+    "keywords": ["Hành động", "Đam mê", "Bốc đồng"],
+    "daily_guidance": "Hãy chắc chắn bạn biết mình đang đi đâu.",
+    "reflection_question": "Bạn có đang quá vội vàng?"
+  },
+  "Queen of Wands": {
+    "id": 34,
+    "name_vi": "Hoàng Hậu Gậy",
+    "name_en": "Queen of Wands",
+    "image_url": "images/queen_of_wands.webp",
+    "core_message": "Sự tự tin lan tỏa từ bạn.",
+    "keywords": ["Tự tin", "Lôi cuốn", "Nhiệt huyết"],
+    "daily_guidance": "Hãy tin vào sức hút tự nhiên của mình.",
+    "reflection_question": "Bạn tỏa sáng nhất khi nào?"
+  },
+  "King of Wands": {
+    "id": 35,
+    "name_vi": "Hoàng Đế Gậy",
+    "name_en": "King of Wands",
+    "image_url": "images/king_of_wands.webp",
+    "core_message": "Tầm nhìn cần đi kèm trách nhiệm.",
+    "keywords": ["Lãnh đạo", "Tầm nhìn", "Quyết đoán"],
+    "daily_guidance": "Dẫn dắt bằng cảm hứng.",
+    "reflection_question": "Bạn đang dẫn dắt điều gì?"
+  },
+  "Ace of Cups": {
+    "id": 36,
+    "name_vi": "Át Cốc",
+    "name_en": "Ace of Cups",
+    "image_url": "images/ace_of_cups.webp",
+    "core_message": "Một dòng cảm xúc mới đang mở ra.",
+    "keywords": ["Cảm xúc", "Khởi đầu", "Yêu thương"],
+    "daily_guidance": "Hãy cho phép bản thân cảm nhận chân thành.",
+    "reflection_question": "Cảm xúc nào đang muốn được bày tỏ?"
+  },
+  "Two of Cups": {
+    "id": 37,
+    "name_vi": "Hai Cốc",
+    "name_en": "Two of Cups",
+    "image_url": "images/two_of_cups.webp",
+    "core_message": "Sự kết nối cân bằng và chân thành.",
+    "keywords": ["Kết nối", "Hòa hợp", "Tôn trọng"],
+    "daily_guidance": "Hãy mở lòng trong mối quan hệ quan trọng.",
+    "reflection_question": "Bạn đang thực sự kết nối với ai?"
+  },
+  "Three of Cups": {
+    "id": 38,
+    "name_vi": "Ba Cốc",
+    "name_en": "Three of Cups",
+    "image_url": "images/three_of_cups.webp",
+    "core_message": "Niềm vui đến từ sự sẻ chia.",
+    "keywords": ["Niềm vui", "Bạn bè", "Ăn mừng"],
+    "daily_guidance": "Hãy dành thời gian cho những người khiến bạn vui.",
+    "reflection_question": "Bạn cảm thấy được nâng đỡ bởi ai?"
+  },
+  "Four of Cups": {
+    "id": 39,
+    "name_vi": "Bốn Cốc",
+    "name_en": "Four of Cups",
+    "image_url": "images/four_of_cups.webp",
+    "core_message": "Sự thờ ơ có thể che mất cơ hội.",
+    "keywords": ["Chán nản", "Bỏ lỡ", "Nội tâm"],
+    "daily_guidance": "Hãy chú ý đến điều bạn đang bỏ qua.",
+    "reflection_question": "Cơ hội nào đang ở ngay trước mắt bạn?"
+  },
+  "Five of Cups": {
+    "id": 40,
+    "name_vi": "Năm Cốc",
+    "name_en": "Five of Cups",
+    "image_url": "images/five_of_cups.webp",
+    "core_message": "Nỗi buồn cần được thừa nhận.",
+    "keywords": ["Mất mát", "Tiếc nuối", "Cảm xúc"],
+    "daily_guidance": "Cho phép mình buồn, nhưng đừng quên điều còn lại.",
+    "reflection_question": "Bạn đang níu giữ nỗi buồn nào?"
+  },
+  "Six of Cups": {
+    "id": 41,
+    "name_vi": "Sáu Cốc",
+    "name_en": "Six of Cups",
+    "image_url": "images/six_of_cups.webp",
+    "core_message": "Ký ức cũ mang lại cảm xúc quen thuộc.",
+    "keywords": ["Hoài niệm", "Quá khứ", "Thuần khiết"],
+    "daily_guidance": "Hãy trân trọng nhưng đừng mắc kẹt trong quá khứ.",
+    "reflection_question": "Điều gì từ quá khứ đang ảnh hưởng bạn hôm nay?"
+  },
+  "Seven of Cups": {
+    "id": 42,
+    "name_vi": "Bảy Cốc",
+    "name_en": "Seven of Cups",
+    "image_url": "images/seven_of_cups.webp",
+    "core_message": "Quá nhiều lựa chọn gây mơ hồ.",
+    "keywords": ["Ảo tưởng", "Lựa chọn", "Phân vân"],
+    "daily_guidance": "Hãy quay về điều thực tế và rõ ràng.",
+    "reflection_question": "Điều gì đang khiến bạn mất tập trung?"
+  },
+  "Eight of Cups": {
+    "id": 43,
+    "name_vi": "Tám Cốc",
+    "name_en": "Eight of Cups",
+    "image_url": "images/eight_of_cups.webp",
+    "core_message": "Đã đến lúc rời đi để tìm điều ý nghĩa hơn.",
+    "keywords": ["Buông bỏ", "Tìm kiếm", "Trưởng thành"],
+    "daily_guidance": "Can đảm rời khỏi điều không còn nuôi dưỡng bạn.",
+    "reflection_question": "Bạn cần rời xa điều gì?"
+  },
+  "Nine of Cups": {
+    "id": 44,
+    "name_vi": "Chín Cốc",
+    "name_en": "Nine of Cups",
+    "image_url": "images/nine_of_cups.webp",
+    "core_message": "Sự hài lòng và mãn nguyện.",
+    "keywords": ["Thỏa mãn", "Biết đủ", "Niềm vui"],
+    "daily_guidance": "Hãy tận hưởng những gì bạn đang có.",
+    "reflection_question": "Bạn đang biết ơn điều gì?"
+  },
+  "Ten of Cups": {
+    "id": 45,
+    "name_vi": "Mười Cốc",
+    "name_en": "Ten of Cups",
+    "image_url": "images/ten_of_cups.webp",
+    "core_message": "Hạnh phúc đến từ sự hòa hợp.",
+    "keywords": ["Hạnh phúc", "Gia đình", "Trọn vẹn"],
+    "daily_guidance": "Nuôi dưỡng sự gắn kết cảm xúc.",
+    "reflection_question": "Hạnh phúc với bạn hiện tại là gì?"
+  },
+  "Page of Cups": {
+    "id": 46,
+    "name_vi": "Tiểu Đồng Cốc",
+    "name_en": "Page of Cups",
+    "image_url": "images/page_of_cups.webp",
+    "core_message": "Một cảm xúc mới mẻ đang nảy sinh.",
+    "keywords": ["Nhạy cảm", "Trực giác", "Mở lòng"],
+    "daily_guidance": "Hãy đón nhận cảm xúc một cách nhẹ nhàng.",
+    "reflection_question": "Cảm xúc nào đang gõ cửa bạn?"
+  },
+  "Knight of Cups": {
+    "id": 47,
+    "name_vi": "Hiệp Sĩ Cốc",
+    "name_en": "Knight of Cups",
+    "image_url": "images/knight_of_cups.webp",
+    "core_message": "Hãy để cảm xúc dẫn đường, nhưng đừng mơ mộng quá mức.",
+    "keywords": ["Lãng mạn", "Lý tưởng", "Cảm xúc"],
+    "daily_guidance": "Giữ sự cân bằng giữa mơ và thực.",
+    "reflection_question": "Bạn đang theo đuổi điều gì bằng trái tim?"
+  },
+  "Queen of Cups": {
+    "id": 48,
+    "name_vi": "Hoàng Hậu Cốc",
+    "name_en": "Queen of Cups",
+    "image_url": "images/queen_of_cups.webp",
+    "core_message": "Sự thấu cảm là sức mạnh của bạn.",
+    "keywords": ["Thấu cảm", "Chữa lành", "Quan tâm"],
+    "daily_guidance": "Hãy chăm sóc cảm xúc của mình trước.",
+    "reflection_question": "Bạn có đang lắng nghe cảm xúc của chính mình?"
+  },
+  "King of Cups": {
+    "id": 49,
+    "name_vi": "Hoàng Đế Cốc",
+    "name_en": "King of Cups",
+    "image_url": "images/king_of_cups.webp",
+    "core_message": "Sự bình tĩnh giúp bạn làm chủ cảm xúc.",
+    "keywords": ["Cân bằng", "Trưởng thành", "Điềm tĩnh"],
+    "daily_guidance": "Hãy phản ứng bằng sự chín chắn.",
+    "reflection_question": "Bạn đang kiểm soát hay bị cuốn theo cảm xúc?"
+  },
+  "Ace of Swords": {
+    "id": 50,
+    "name_vi": "Át Kiếm",
+    "name_en": "Ace of Swords",
+    "image_url": "images/ace_of_swords.webp",
+    "core_message": "Sự thật và sự rõ ràng đang xuất hiện.",
+    "keywords": ["Rõ ràng", "Sự thật", "Tư duy"],
+    "daily_guidance": "Hãy nói và nghĩ một cách thẳng thắn.",
+    "reflection_question": "Sự thật nào bạn cần đối diện?"
+  },
+  "Two of Swords": {
+    "id": 51,
+    "name_vi": "Hai Kiếm",
+    "name_en": "Two of Swords",
+    "image_url": "images/two_of_swords.webp",
+    "core_message": "Sự do dự đang kìm hãm bạn.",
+    "keywords": ["Do dự", "Tránh né", "Cân bằng"],
+    "daily_guidance": "Đừng né tránh quyết định cần đưa ra.",
+    "reflection_question": "Bạn đang trì hoãn điều gì?"
+  },
+  "Three of Swords": {
+    "id": 52,
+    "name_vi": "Ba Kiếm",
+    "name_en": "Three of Swords",
+    "image_url": "images/three_of_swords.webp",
+    "core_message": "Nỗi đau cần được nhìn nhận.",
+    "keywords": ["Tổn thương", "Chia ly", "Sự thật"],
+    "daily_guidance": "Cho phép mình chữa lành thay vì chối bỏ.",
+    "reflection_question": "Vết thương nào vẫn còn ảnh hưởng bạn?"
+  },
+  "Four of Swords": {
+    "id": 53,
+    "name_vi": "Bốn Kiếm",
+    "name_en": "Four of Swords",
+    "image_url": "images/four_of_swords.webp",
+    "core_message": "Cơ thể và tâm trí cần nghỉ ngơi.",
+    "keywords": ["Nghỉ ngơi", "Phục hồi", "Tĩnh lặng"],
+    "daily_guidance": "Hãy tạm dừng để hồi phục năng lượng.",
+    "reflection_question": "Bạn đã cho mình nghỉ ngơi đủ chưa?"
+  },
+  "Five of Swords": {
+    "id": 54,
+    "name_vi": "Năm Kiếm",
+    "name_en": "Five of Swords",
+    "image_url": "images/five_of_swords.webp",
+    "core_message": "Thắng thua có thể để lại tổn thất.",
+    "keywords": ["Xung đột", "Cái tôi", "Hệ quả"],
+    "daily_guidance": "Hãy cân nhắc cái giá của việc hơn thua.",
+    "reflection_question": "Chiến thắng này có thực sự đáng không?"
+  },
+  "Six of Swords": {
+    "id": 55,
+    "name_vi": "Sáu Kiếm",
+    "name_en": "Six of Swords",
+    "image_url": "images/six_of_swords.webp",
+    "core_message": "Bạn đang rời xa điều khó khăn.",
+    "keywords": ["Chuyển tiếp", "Chữa lành", "Tiến lên"],
+    "daily_guidance": "Hãy cho mình thời gian để thích nghi.",
+    "reflection_question": "Bạn đang rời khỏi điều gì?"
+  },
+  "Seven of Swords": {
+    "id": 56,
+    "name_vi": "Bảy Kiếm",
+    "name_en": "Seven of Swords",
+    "image_url": "images/seven_of_swords.webp",
+    "core_message": "Không phải mọi thứ đều minh bạch.",
+    "keywords": ["Bí mật", "Tránh né", "Chiến lược"],
+    "daily_guidance": "Hãy cẩn trọng với hành động thiếu trung thực.",
+    "reflection_question": "Bạn đang che giấu hay né tránh điều gì?"
+  },
+  "Eight of Swords": {
+    "id": 57,
+    "name_vi": "Tám Kiếm",
+    "name_en": "Eight of Swords",
+    "image_url": "images/eight_of_swords.webp",
+    "core_message": "Sự giới hạn phần lớn đến từ suy nghĩ.",
+    "keywords": ["Bị kẹt", "Tự giới hạn", "Sợ hãi"],
+    "daily_guidance": "Nhận ra bạn có nhiều lựa chọn hơn bạn nghĩ.",
+    "reflection_question": "Niềm tin nào đang kìm hãm bạn?"
+  },
+  "Nine of Swords": {
+    "id": 58,
+    "name_vi": "Chín Kiếm",
+    "name_en": "Nine of Swords",
+    "image_url": "images/nine_of_swords.webp",
+    "core_message": "Lo lắng đang chiếm lấy tâm trí.",
+    "keywords": ["Lo âu", "Áp lực", "Suy nghĩ nhiều"],
+    "daily_guidance": "Đừng để nỗi sợ trong đầu lấn át thực tế.",
+    "reflection_question": "Nỗi lo nào khiến bạn mất ngủ?"
+  },
+  "Ten of Swords": {
+    "id": 59,
+    "name_vi": "Mười Kiếm",
+    "name_en": "Ten of Swords",
+    "image_url": "images/ten_of_swords.webp",
+    "core_message": "Một giai đoạn đau đớn đã chạm đáy.",
+    "keywords": ["Kết thúc", "Đau đớn", "Buông bỏ"],
+    "daily_guidance": "Dù khó khăn, đây là điểm kết thúc để bắt đầu lại.",
+    "reflection_question": "Điều gì đã thực sự kết thúc?"
+  },
+  "Page of Swords": {
+    "id": 60,
+    "name_vi": "Tiểu Đồng Kiếm",
+    "name_en": "Page of Swords",
+    "image_url": "images/page_of_swords.webp",
+    "core_message": "Sự tò mò và ham học hỏi được khơi dậy.",
+    "keywords": ["Tò mò", "Quan sát", "Học hỏi"],
+    "daily_guidance": "Hãy đặt câu hỏi và tìm hiểu kỹ.",
+    "reflection_question": "Bạn đang muốn hiểu rõ điều gì?"
+  },
+  "Knight of Swords": {
+    "id": 61,
+    "name_vi": "Hiệp Sĩ Kiếm",
+    "name_en": "Knight of Swords",
+    "image_url": "images/knight_of_swords.webp",
+    "core_message": "Hành động nhanh nhưng dễ thiếu cân nhắc.",
+    "keywords": ["Nhanh chóng", "Quyết liệt", "Thiếu kiên nhẫn"],
+    "daily_guidance": "Chậm lại để tránh nói hoặc làm quá đà.",
+    "reflection_question": "Bạn có đang hành động quá vội?"
+  },
+  "Queen of Swords": {
+    "id": 62,
+    "name_vi": "Hoàng Hậu Kiếm",
+    "name_en": "Queen of Swords",
+    "image_url": "images/queen_of_swords.webp",
+    "core_message": "Sự minh bạch và lý trí dẫn đường.",
+    "keywords": ["Thẳng thắn", "Trí tuệ", "Rõ ràng"],
+    "daily_guidance": "Hãy nói sự thật với sự tôn trọng.",
+    "reflection_question": "Bạn cần đặt ranh giới ở đâu?"
+  },
+  "King of Swords": {
+    "id": 63,
+    "name_vi": "Hoàng Đế Kiếm",
+    "name_en": "King of Swords",
+    "image_url": "images/king_of_swords.webp",
+    "core_message": "Lý trí và công bằng cần được ưu tiên.",
+    "keywords": ["Công bằng", "Phán đoán", "Trí tuệ"],
+    "daily_guidance": "Quyết định dựa trên sự thật, không cảm xúc.",
+    "reflection_question": "Bạn đang đưa ra quyết định dựa trên điều gì?"
+  },
+  "Ace of Pentacles": {
+    "id": 64,
+    "name_vi": "Át Tiền",
+    "name_en": "Ace of Pentacles",
+    "image_url": "images/ace_of_pentacles.webp",
+    "core_message": "Một cơ hội thực tế đang mở ra.",
+    "keywords": ["Cơ hội", "Khởi đầu", "Ổn định"],
+    "daily_guidance": "Hãy chú ý đến những điều có thể phát triển lâu dài.",
+    "reflection_question": "Cơ hội nào đang ở trước mắt bạn?"
+  },
+  "Two of Pentacles": {
+    "id": 65,
+    "name_vi": "Hai Tiền",
+    "name_en": "Two of Pentacles",
+    "image_url": "images/two_of_pentacles.webp",
+    "core_message": "Bạn đang cố gắng cân bằng nhiều việc cùng lúc.",
+    "keywords": ["Cân bằng", "Linh hoạt", "Ưu tiên"],
+    "daily_guidance": "Đừng ôm đồm quá nhiều hơn khả năng.",
+    "reflection_question": "Điều gì cần được ưu tiên hôm nay?"
+  },
+  "Three of Pentacles": {
+    "id": 66,
+    "name_vi": "Ba Tiền",
+    "name_en": "Three of Pentacles",
+    "image_url": "images/three_of_pentacles.webp",
+    "core_message": "Hợp tác mang lại kết quả tốt.",
+    "keywords": ["Hợp tác", "Kỹ năng", "Học hỏi"],
+    "daily_guidance": "Hãy trân trọng đóng góp của từng người.",
+    "reflection_question": "Bạn đang học hỏi từ ai?"
+  },
+  "Four of Pentacles": {
+    "id": 67,
+    "name_vi": "Bốn Tiền",
+    "name_en": "Four of Pentacles",
+    "image_url": "images/four_of_pentacles.webp",
+    "core_message": "Sự bám chặt có thể gây căng thẳng.",
+    "keywords": ["Giữ chặt", "Sợ mất", "Kiểm soát"],
+    "daily_guidance": "Hãy xem điều gì cần được thả lỏng.",
+    "reflection_question": "Bạn đang bám giữ điều gì quá chặt?"
+  },
+  "Five of Pentacles": {
+    "id": 68,
+    "name_vi": "Năm Tiền",
+    "name_en": "Five of Pentacles",
+    "image_url": "images/five_of_pentacles.webp",
+    "core_message": "Cảm giác thiếu thốn có thể xuất hiện.",
+    "keywords": ["Thiếu hụt", "Cô đơn", "Khó khăn"],
+    "daily_guidance": "Đừng ngại tìm sự hỗ trợ khi cần.",
+    "reflection_question": "Bạn đang cảm thấy thiếu điều gì?"
+  },
+  "Six of Pentacles": {
+    "id": 69,
+    "name_vi": "Sáu Tiền",
+    "name_en": "Six of Pentacles",
+    "image_url": "images/six_of_pentacles.webp",
+    "core_message": "Sự cho đi và nhận lại cần cân bằng.",
+    "keywords": ["Chia sẻ", "Hào phóng", "Công bằng"],
+    "daily_guidance": "Hãy cho đi với sự tỉnh táo.",
+    "reflection_question": "Bạn đang cho hay nhận nhiều hơn?"
+  },
+  "Seven of Pentacles": {
+    "id": 70,
+    "name_vi": "Bảy Tiền",
+    "name_en": "Seven of Pentacles",
+    "image_url": "images/seven_of_pentacles.webp",
+    "core_message": "Thành quả cần thời gian để lớn lên.",
+    "keywords": ["Kiên nhẫn", "Đánh giá", "Chờ đợi"],
+    "daily_guidance": "Đừng vội vàng với kết quả.",
+    "reflection_question": "Bạn có đủ kiên nhẫn với tiến trình này không?"
+  },
+  "Eight of Pentacles": {
+    "id": 71,
+    "name_vi": "Tám Tiền",
+    "name_en": "Eight of Pentacles",
+    "image_url": "images/eight_of_pentacles.webp",
+    "core_message": "Sự tập trung mang lại tiến bộ.",
+    "keywords": ["Chăm chỉ", "Kỹ năng", "Tập trung"],
+    "daily_guidance": "Hãy đầu tư thời gian cho việc rèn luyện.",
+    "reflection_question": "Bạn đang rèn giũa kỹ năng nào?"
+  },
+  "Nine of Pentacles": {
+    "id": 72,
+    "name_vi": "Chín Tiền",
+    "name_en": "Nine of Pentacles",
+    "image_url": "images/nine_of_pentacles.webp",
+    "core_message": "Sự độc lập mang lại sự tự tin.",
+    "keywords": ["Độc lập", "Đủ đầy", "Tự chủ"],
+    "daily_guidance": "Hãy tận hưởng thành quả của riêng bạn.",
+    "reflection_question": "Bạn tự hào nhất về điều gì?"
+  },
+  "Ten of Pentacles": {
+    "id": 73,
+    "name_vi": "Mười Tiền",
+    "name_en": "Ten of Pentacles",
+    "image_url": "images/ten_of_pentacles.webp",
+    "core_message": "Sự ổn định lâu dài được xây dựng.",
+    "keywords": ["Gia đình", "An toàn", "Bền vững"],
+    "daily_guidance": "Hãy trân trọng nền tảng bạn đang có.",
+    "reflection_question": "Điều gì mang lại cảm giác an toàn cho bạn?"
+  },
+  "Page of Pentacles": {
+    "id": 74,
+    "name_vi": "Tiểu Đồng Tiền",
+    "name_en": "Page of Pentacles",
+    "image_url": "images/page_of_pentacles.webp",
+    "core_message": "Một cơ hội học hỏi thực tế xuất hiện.",
+    "keywords": ["Học hỏi", "Khởi đầu", "Thực tế"],
+    "daily_guidance": "Hãy bắt đầu từ những bước nhỏ nhưng chắc chắn.",
+    "reflection_question": "Bạn đang học điều gì mới?"
+  },
+  "Knight of Pentacles": {
+    "id": 75,
+    "name_vi": "Hiệp Sĩ Tiền",
+    "name_en": "Knight of Pentacles",
+    "image_url": "images/knight_of_pentacles.webp",
+    "core_message": "Sự bền bỉ quan trọng hơn tốc độ.",
+    "keywords": ["Kiên trì", "Ổn định", "Trách nhiệm"],
+    "daily_guidance": "Tiếp tục đều đặn, dù chậm.",
+    "reflection_question": "Bạn có đang kiên định với mục tiêu?"
+  },
+  "Queen of Pentacles": {
+    "id": 76,
+    "name_vi": "Hoàng Hậu Tiền",
+    "name_en": "Queen of Pentacles",
+    "image_url": "images/queen_of_pentacles.webp",
+    "core_message": "Sự chăm sóc tạo nên nền tảng vững chắc.",
+    "keywords": ["Chăm sóc", "Thực tế", "Ổn định"],
+    "daily_guidance": "Quan tâm đến cả vật chất lẫn tinh thần.",
+    "reflection_question": "Bạn đang chăm sóc điều gì trong cuộc sống?"
+  },
+  "King of Pentacles": {
+    "id": 77,
+    "name_vi": "Hoàng Đế Tiền",
+    "name_en": "King of Pentacles",
+    "image_url": "images/king_of_pentacles.webp",
+    "core_message": "Sự vững vàng đến từ trách nhiệm và kinh nghiệm.",
+    "keywords": ["Thành tựu", "Ổn định", "Lãnh đạo"],
+    "daily_guidance": "Hãy dẫn dắt bằng sự đáng tin cậy.",
+    "reflection_question": "Bạn đang xây dựng điều gì lâu dài?"
+  }
+}

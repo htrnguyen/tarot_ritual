@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Tarot Ritual</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+    <script src="assets/vendor/mediapipe/camera_utils.js"></script>
+    <script src="assets/vendor/mediapipe/control_utils.js"></script>
+    <script src="assets/vendor/mediapipe/hands.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    <div id="virtual-cursor"></div>
+    
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <div style="font-size: 4rem; color: #fff; text-shadow: 0 0 30px rgba(138, 43, 226, 0.9); margin-bottom: 30px;">✦</div>
+            <h1 style="font-size: 2.5rem; color: #fff; letter-spacing: 12px; margin-bottom: 15px; font-weight: 300;">TAROT RITUAL</h1>
+            <p style="font-size: 0.9rem; color: #aaa; letter-spacing: 3px; margin-bottom: 40px;">Khám phá thông điệp dành riêng cho bạn</p>
+            <button id="start-btn" style="
+                padding: 18px 60px;
+                font-size: 1rem;
+                letter-spacing: 6px;
+                background: transparent;
+                color: #fff;
+                border: 2px solid #fff;
+                cursor: pointer;
+                transition: all 0.3s;
+            ">BẮT ĐẦU</button>
+        </div>
+    </div>
+
+    <div id="ui-layer" style="display:none;">
+        <div id="counter" style="display:none;">0 / 3</div>
+        <div id="guide-text">Tách ngón cái và ngón trỏ (🤏) để bắt đầu tráo bài</div>
+        <div id="credit-text" style="font-size: 0.7rem;">
+            Lưu ý: Kết quả chỉ mang tính chất chiêm nghiệm giải trí.<br>
+            Based on <a href="https://en.wikipedia.org/wiki/Rider%E2%80%93Waite_Tarot" target="_blank" style="color: #fff; text-decoration: underline;">Rider–Waite Tarot</a>
+        </div>
+    </div>
+
+    <div id="result-modal">
+        <h2>Thông điệp của bạn</h2>
+        <div id="final-reading"></div>
+        <button class="restart-btn" onclick="location.reload()">TRẢI BÀI MỚI</button>
+    </div>
+
+    <div id="loading">
+        <div class="loader-content">
+            <div style="font-size: 4rem; color: #fff; text-shadow: 0 0 20px rgba(138, 43, 226, 0.8); margin-bottom: 20px;">✦</div>
+            <div style="font-size: 1.5rem; color: #fff; letter-spacing: 8px; margin-bottom: 10px; font-weight: 300;">TAROT RITUAL</div>
+            <div style="font-size: 0.7rem; color: #888; letter-spacing: 4px; margin-top: 10px;">Đang khởi tạo không gian thiêng...</div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
