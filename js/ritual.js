@@ -60,8 +60,8 @@ export class RitualManager {
             this.avgPinchDistance = smoothingFactor * rawAvgPinch + (1 - smoothingFactor) * this.avgPinchDistance;
         }
 
-        const MIN_PINCH_FOR_SHUFFLE = 0.08
-        const MAX_PINCH_FOR_REVEAL = 0.06;
+        const MIN_PINCH_FOR_SHUFFLE = 0.1;
+        const MAX_PINCH_FOR_REVEAL = 0.08;
 
         if (this.avgPinchDistance > MIN_PINCH_FOR_SHUFFLE && this.handsDetected) {
             if (this.currentState === RITUAL_STATE.PREPARING) {
