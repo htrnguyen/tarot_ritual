@@ -119,15 +119,14 @@ export class RitualManager {
                     .to({ x: 0, y: 0, z: 10 }, 1500)
                     .easing(TWEEN.Easing.Elastic.Out)
                     .start();
-
-                new TWEEN.Tween(card.scale)
-                    .to({ x: 3.0, y: 3.0, z: 3.0 }, 1500)
-                    .easing(TWEEN.Easing.Elastic.Out)
-                    .start();
                 
                 new TWEEN.Tween(card.rotation)
                     .to({ x: 0, y: 0, z: 0 }, 1500)
                     .easing(TWEEN.Easing.Back.Out)
+                    .onStart(() => {
+                        // Reveal front face just before flipping to front
+                        if (card.children[1]) card.children[1].visible = true;
+                    })
                     .onComplete(() => {
                         this.sceneManager.createExplosion(card.position);
                          setTimeout(() => this.uiManager.revealReading([card]), 500);
