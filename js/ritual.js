@@ -140,7 +140,7 @@ export class RitualManager {
             .easing(TWEEN.Easing.Exponential.In)
             .start();
         new TWEEN.Tween(card.scale)
-            .to({ x: 6.0, y: 6.0, z: 6.0 }, 800)
+            .to({ x: 4.0, y: 4.0, z: 4.0 }, 800)
             .easing(TWEEN.Easing.Exponential.In)
             .start();
     }
